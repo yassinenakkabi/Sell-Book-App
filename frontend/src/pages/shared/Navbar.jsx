@@ -31,9 +31,9 @@ const Navbar = () => {
 
     const navItems = [
         { link: "Home", path: "/" },
-        { link: "About", path: "/about" },
-        { link: "Shop", path: "/shop" },
-        { link: "Sell Your Book", path: "/admin/dashboard" },
+        { link: "à propos", path: "/about" },
+        { link: "dispo en librairie", path: "/shop" },
+        { link: "vendez votre livre", path: "/admin/dashboard" },
         { link: "Blog", path: "/blog" },
     ];
     return (
@@ -41,12 +41,12 @@ const Navbar = () => {
             <nav className={`py-4 lg:px-24 px-4 ${isSticky ? "sticky top-0 left-0 right-0 bg-[#ffffff]" : ""
                 }`}>
                 <div className="flex justify-between items-center text-base gap-8">
-                    <Link to="/" className="text-2xl font-bold text-[#5956e9] flex items-center gap-2"><FaBlog className="inline-block"/>BiblioVente</Link>
+                    <Link to="/" className="text-2xl font-bold text-[#e8e8e8] flex items-center gap-2"><FaBlog className="inline-block"/>BiblioVente</Link>
 
                     <ul className="md:flex space-x-12 hidden navitems">
 
                         {
-                            navItems.map(({ link, path }) => <Link key={link} to={path}  className="link block text-base cursor-pointer uppercase text-black hover:text-[#5956e9]">
+                            navItems.map(({ link, path }) => <Link key={link} to={path}  className="link block text-base cursor-pointer uppercase text-white hover:text-[#bcbaf3]">
                                 {link}
                             </Link>)
                         }

@@ -18,7 +18,7 @@ import ReviewCard from '../shared/ReviewCard';
 const Review = () => {
     return (
         <div className='my-12 px-4 lg:px-24'>
-            <h2 className='text-5xl font-bold text-center mb-10 leading-snug'>Our Customers</h2>
+            <h2 className='text-5xl font-bold text-center mb-10 leading-snug'>Nos clients</h2>
 
             {/* reviews card */}
             <Swiper
@@ -63,8 +63,8 @@ const Review = () => {
                                 rounded
                                 className='w-10 mb-4'
                             />
-                            <h5 className='text-lg font-medium'>Mark Ping</h5>
-                            <p className='text-sm'> CEO, ABC Company</p>
+                            <h5 className='text-lg font-medium'>Abir Abbade</h5>
+                            <p className='text-sm'>Marrakech</p>
                         </div>
                     </div>
                 </SwiperSlide>
